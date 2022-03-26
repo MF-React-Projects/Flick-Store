@@ -5,7 +5,6 @@ import {Button, Col} from "react-bootstrap";
 import {faCartPlus, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
 const Product = ({product}) => {
-    console.log(product);
     const {name, price, img} = product;
     return (
         <Col xs={12} sm={6} md={4}>
@@ -16,7 +15,7 @@ const Product = ({product}) => {
                 <div className="flick-product-content">
                     <h5>{name}</h5>
                     <p>${price}</p>
-                    <Button variant="primary">
+                    <Button variant="primary" className='w-100' onClick={}>
                         Add to cart
                         <FontAwesomeIcon className={'ms-2'} icon={faCartPlus} />
                     </Button>
