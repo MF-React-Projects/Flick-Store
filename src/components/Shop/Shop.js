@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Shop.css';
 import Product from "../Product/Product";
-import {Container, Row, Col, Offcanvas} from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 import Cart from "../Cart/Cart";
 
 const Shop = () => {
@@ -12,7 +12,12 @@ const Shop = () => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, []);
+
+    const handleAddProduct = product => {
+        const newCart = [...cart, product];
+        setCart(newCart);
+    }
 
     return (
         <>
@@ -24,7 +29,7 @@ const Shop = () => {
                                 <div className="ic-grid-products">
                                     <Row>
                                         {
-                                            products.map(product => <Product key={product.id} product={product}/>)
+                                            products.map(product => <Product key={product.id} product={product} handleAddProduct={() => handleAddProduct(product)}/>)
                                         }
                                     </Row>
                                 </div>
