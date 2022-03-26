@@ -3,6 +3,7 @@ import './Shop.css';
 import Product from "../Product/Product";
 import {Row, Col} from "react-bootstrap";
 import Cart from "../Cart/Cart";
+import Questions from "../Questions/Questions";
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -60,7 +61,7 @@ const Shop = () => {
                         </div>
                     </Col>
                 </Row>
-
+                <Questions/>
             </div>
         </>
     );
