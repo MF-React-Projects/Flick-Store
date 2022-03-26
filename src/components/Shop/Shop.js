@@ -14,7 +14,7 @@ const Shop = () => {
 
 
     return (
-        <div>
+        <div id={'shop'}>
             <div className="ic-products">
                 <div className="ic-grid-products">
                     <Container>
