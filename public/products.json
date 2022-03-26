@@ -2,15 +2,97 @@
   {
     "id": "product-1",
     "category": "chair",
-    "name": "ULTRABOOST 22 SHOES",
-    "seller": "Addidas",
+    "name": "Green Color Chair",
     "price": 420,
-    "stock": 20,
-    "ratings": 4,
-    "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
-    "shipping": 1,
+    "img": "./product/product-1.jpg",
     "quantity": 0
   },
-
+  {
+    "id": "product-2",
+    "category": "chair",
+    "name": "Modern Design Chair",
+    "price": 380,
+    "img": "./product/product-2.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-3",
+    "category": "table",
+    "name": "Wooden Single Drawer Table",
+    "price": 500,
+    "img": "./product/product-3.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-4",
+    "category": "light",
+    "name": "Decorative Tripos Standing Light",
+    "price": 340,
+    "img": "./product/product-4.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-5",
+    "category": "shelf",
+    "name": "Shelf, Rack For Magazines",
+    "price": 600,
+    "img": "./product/product-5.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-6",
+    "category": "drawer",
+    "name": "Vintage Wooden Chest Drawer",
+    "price": 220,
+    "img": "./product/product-6.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-7",
+    "category": "chair",
+    "name": "Relaxing Chair",
+    "price": 320,
+    "img": "./product/product-7.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-8",
+    "category": "chair",
+    "name": "Modern Chair",
+    "price": 380,
+    "img": "./product/product-8.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-9",
+    "category": "chair",
+    "name": "Sofa Chair",
+    "price": 580,
+    "img": "./product/product-9.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-10",
+    "category": "chair",
+    "name": "Modern Relaxing Chair",
+    "price": 280,
+    "img": "./product/product-10.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-11",
+    "category": "wardrobe",
+    "name": "Wooden Wardrobe With Sliding Doors",
+    "price": 1080,
+    "img": "./product/product-11.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "product-12",
+    "category": "wardrobe",
+    "name": "Modern Wardrobe",
+    "price": 880,
+    "img": "./product/product-12.jpg",
+    "quantity": 0
+  }
 ]
