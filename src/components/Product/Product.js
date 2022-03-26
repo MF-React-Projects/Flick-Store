@@ -7,7 +7,7 @@ import {faCartPlus} from "@fortawesome/free-solid-svg-icons";
 const Product = ({product, handleAddProduct}) => {
     const {name, price, img} = product;
     return (
-        <Col xs={12} sm={6} md={4}>
+        <Col xs={12} sm={6} md={6} lg={4}>
             <div className="flick-product">
                 <div className="img-box">
                     <img src={img} alt="" className='img-fluid'/>
