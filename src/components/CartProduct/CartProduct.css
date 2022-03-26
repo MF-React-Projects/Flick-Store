@@ -15,6 +15,9 @@
     font-weight: 500;
 }
 
+.cart-item-delete{
+    cursor: pointer;
+}
 
 
 

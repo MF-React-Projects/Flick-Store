@@ -4,22 +4,3 @@
     padding: 20px 20px 30px 20px;
     text-align: center;
 }
-#random-product{
-    margin-top: 30px;
-}
-#random-product>div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-#random-product img {
-    width: 80px;
-    margin-right: 10px;
-}
-#random-product img+div {
-    flex-grow: 1;
-    text-align: left;
-}
-#random-product h5{
-    font-weight: 500;
-}
