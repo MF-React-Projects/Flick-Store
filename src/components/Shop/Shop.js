@@ -15,13 +15,25 @@ const Shop = () => {
     }, []);
 
     const handleAddProduct = product => {
+        if(cart.length === 4){
+            alert('You can only add 4 products in the cart');
+            return;
+        }
         if(cart.find(p => p.id === product.id)) {
             alert('Product already added to cart');
         } else {
             const newCart = [...cart, product];
             setCart(newCart);
         }
+    }
 
+    const handleDeleteProduct = product => {
+        const newCart = cart.filter(p => p.id !== product.id);
+        setCart(newCart);
+    }
+
+    const handleEmptyCart = () => {
+        setCart([]);
     }
 
     return (
@@ -44,10 +56,11 @@ const Shop = () => {
                     </Col>
                     <Col md={4}>
                         <div className="cart-container h-100">
-                            <Cart cart={cart}/>
+                            <Cart cart={cart} handleEmptyCart={handleEmptyCart}/>
                         </div>
                     </Col>
                 </Row>
+
             </div>
         </>
     );
