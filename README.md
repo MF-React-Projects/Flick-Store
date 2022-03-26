@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Flick Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Best furniture store in the world. visit flick store. [Flick Store](https://flick-store.com)
 
 ## Available Scripts
 
