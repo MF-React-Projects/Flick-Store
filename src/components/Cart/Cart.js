@@ -4,7 +4,7 @@ import CartProduct from "../CartProduct/CartProduct";
 import {Button} from "react-bootstrap";
 import SuggestedProduct from "../SuggestedProduct/SuggestedProduct";
 
-const Cart = ({cart, handleEmptyCart}) => {
+const Cart = ({cart, handleEmptyCart, deleteProduct}) => {
     const [suggestedProduct, setSuggestedProduct] = useState([])
 
     // suggest random products to the user
@@ -26,7 +26,7 @@ const Cart = ({cart, handleEmptyCart}) => {
             <div className='cart'>
                 <h4 className='mb-3'>Your Cart</h4>
                 {
-                    cart.map(item => <CartProduct key={item.id} item={item}/>)
+                    cart.map(item => <CartProduct key={item.id} item={item} deleteProduct={deleteProduct}/>)
                 }
                 <Button variant="primary" className='w-100 mb-3' onClick={chooseRandomProduct}>Choose 1 for me!</Button>
                 <Button variant='primary' className='w-100 mb-4' onClick={handleEmptyCart}>Choose Again</Button>

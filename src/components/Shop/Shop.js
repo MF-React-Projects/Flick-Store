@@ -10,12 +10,14 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
+    // load products from db
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
+    //get cart from local storage
     useEffect(() => {
         const storedCart = getStoredCart();
         const savedCart = [];
@@ -44,7 +46,7 @@ const Shop = () => {
     }
 
     // remove product from cart
-    const handleDeleteProduct = product => {
+    const deleteProduct = product => {
         const newCart = cart.filter(p => p.id !== product.id);
         setCart(newCart);
     }
@@ -75,7 +77,7 @@ const Shop = () => {
                     </Col>
                     <Col md={4}>
                         <div className="cart-container h-100">
-                            <Cart cart={cart} handleEmptyCart={handleEmptyCart}/>
+                            <Cart cart={cart} handleEmptyCart={handleEmptyCart} deleteProduct={deleteProduct}/>
                         </div>
                     </Col>
                 </Row>
