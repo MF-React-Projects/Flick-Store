@@ -4,7 +4,7 @@ import Product from "../Product/Product";
 import {Row, Col} from "react-bootstrap";
 import Cart from "../Cart/Cart";
 import Questions from "../Questions/Questions";
-import {addToDb, getStoredCart} from "../../utilities/fakedb";
+import {addToDb, getStoredCart, removeFromDb} from "../../utilities/fakedb";
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -49,6 +49,7 @@ const Shop = () => {
     const deleteProduct = product => {
         const newCart = cart.filter(p => p.id !== product.id);
         setCart(newCart);
+        removeFromDb(product.id);
     }
 
     // clear cart
