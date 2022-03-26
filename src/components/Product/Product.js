@@ -1,6 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Product.css';
 import {Button, Col} from "react-bootstrap";
+import {faCartPlus, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
 const Product = ({product}) => {
     console.log(product);
@@ -14,7 +16,10 @@ const Product = ({product}) => {
                 <div className="flick-product-content">
                     <h5>{name}</h5>
                     <p>${price}</p>
-                    <Button variant="primary">Add to cart</Button>
+                    <Button variant="primary">
+                        Add to cart
+                        <FontAwesomeIcon className={'ms-2'} icon={faCartPlus} />
+                    </Button>
                 </div>
             </div>
         </Col>
