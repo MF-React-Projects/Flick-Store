@@ -1,0 +1,23 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-item img {
+    width: 80px;
+    margin-right: 10px;
+}
+.cart-item-info {
+    flex-grow: 1;
+    text-align: left;
+}
+.cart-item-info h5{
+    font-weight: 500;
+}
+
+
+
+
+
+
+

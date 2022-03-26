@@ -10,7 +10,6 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    cursor: pointer;
 }
 .flick-product .flick-product-content {
     padding: 16px;

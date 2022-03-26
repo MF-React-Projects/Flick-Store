@@ -15,13 +15,19 @@ const Shop = () => {
     }, []);
 
     const handleAddProduct = product => {
-        const newCart = [...cart, product];
-        setCart(newCart);
+        if(cart.find(p => p.id === product.id)) {
+            alert('Product already added to cart');
+        } else {
+            const newCart = [...cart, product];
+            setCart(newCart);
+        }
+
     }
 
     return (
         <>
             <div className="shop-container">
+                <h4 className='mb-4'>Choose 4 Product</h4>
                 <Row>
                     <Col md={8}>
                         <div id={'shop'}>
@@ -37,7 +43,7 @@ const Shop = () => {
                         </div>
                     </Col>
                     <Col md={4}>
-                        <div className="cart-container">
+                        <div className="cart-container h-100">
                             <Cart cart={cart}/>
                         </div>
                     </Col>

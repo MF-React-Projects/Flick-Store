@@ -18,7 +18,7 @@
   {
     "id": "product-3",
     "category": "table",
-    "name": "Wooden Single Drawer Table",
+    "name": "Wooden Drawer Table",
     "price": 500,
     "img": "./product/product-3.jpg",
     "quantity": 0
@@ -26,7 +26,7 @@
   {
     "id": "product-4",
     "category": "light",
-    "name": "Decorative Tripos Standing Light",
+    "name": "Tripos Standing Light",
     "price": 340,
     "img": "./product/product-4.jpg",
     "quantity": 0
@@ -34,7 +34,7 @@
   {
     "id": "product-5",
     "category": "shelf",
-    "name": "Shelf, Rack For Magazines",
+    "name": "Shelf For Magazines",
     "price": 600,
     "img": "./product/product-5.jpg",
     "quantity": 0
@@ -42,7 +42,7 @@
   {
     "id": "product-6",
     "category": "drawer",
-    "name": "Vintage Wooden Chest Drawer",
+    "name": "Vintage Chest Drawer",
     "price": 220,
     "img": "./product/product-6.jpg",
     "quantity": 0
