@@ -5,6 +5,7 @@ import {Button} from "react-bootstrap";
 
 const Cart = ({cart, handleEmptyCart}) => {
 
+    // suggest random products to the user
     const chooseRandomProduct = () => {
         const randomProductNum = Math.floor(cart.length * Math.random());
         const randomProduct = cart[randomProductNum];

@@ -4,6 +4,7 @@ import Product from "../Product/Product";
 import {Row, Col} from "react-bootstrap";
 import Cart from "../Cart/Cart";
 import Questions from "../Questions/Questions";
+import {addToDb, getStoredCart} from "../../utilities/fakedb";
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -15,6 +16,19 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
 
+    useEffect(() => {
+        const storedCart = getStoredCart();
+        const savedCart = [];
+        for (const productId in storedCart) {
+            const addedProduct = products.find(p => p.id === productId);
+            if(addedProduct) {
+                savedCart.push(addedProduct);
+            }
+        }
+        setCart(savedCart);
+    }, [products]);
+
+    // add product to cart
     const handleAddProduct = product => {
         if(cart.length === 4){
             alert('You can only add 4 products in the cart');
@@ -25,16 +39,20 @@ const Shop = () => {
         } else {
             const newCart = [...cart, product];
             setCart(newCart);
+            addToDb(product);
         }
     }
 
+    // remove product from cart
     const handleDeleteProduct = product => {
         const newCart = cart.filter(p => p.id !== product.id);
         setCart(newCart);
     }
 
+    // clear cart
     const handleEmptyCart = () => {
         setCart([]);
+        localStorage.setItem('flick-cart', []);
     }
 
     return (
