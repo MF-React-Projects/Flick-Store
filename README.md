@@ -15,5 +15,7 @@
     * [React Router](https://reactrouter.com/)
     * [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
 
+## [Live Demo](https://flick-store.netlify.app/)
+
 ---
 Design and developed by **[Mehedi Foysal](https://github.com/mehedifoysal)**
