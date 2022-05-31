@@ -82,7 +82,7 @@ const Shop = () => {
                         </div>
                     </Col>
                 </Row>
-                <Questions/>
+                {/*<Questions/>*/}
             </div>
         </>
     );
